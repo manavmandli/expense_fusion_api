@@ -1,0 +1,20 @@
+meta {
+  name: delete_account
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{base_url}}
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "type": "delete_account",
+    "data": {
+      "name": "personal"
+    }
+  }
+}

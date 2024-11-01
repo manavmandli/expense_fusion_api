@@ -1,0 +1,23 @@
+meta {
+  name: create_account
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{base_url}}
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "type": "signup",
+    "data": {
+      "name": "kavya",
+      "email": "kavya@nesscale.com",
+      "mobile_no": "9913792743",
+      "password": "admin@123"
+    }
+  }
+}

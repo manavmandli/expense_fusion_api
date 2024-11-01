@@ -1,0 +1,21 @@
+meta {
+  name: create_account
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{base_url}}
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "type": "create_account",
+    "data": {
+      "name": "personal",
+      "amount":500
+    }
+  }
+}

@@ -1,0 +1,24 @@
+meta {
+  name: update_income
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{base_url}}
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "type": "update_income",
+    "data": {
+      "income_id": "",
+      "account": "",
+      "date": "",
+      "amount": "",
+      "write_note": ""
+    }
+  }
+}

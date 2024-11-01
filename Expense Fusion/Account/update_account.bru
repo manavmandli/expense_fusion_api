@@ -1,0 +1,22 @@
+meta {
+  name: update_account
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{base_url}}
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "type": "update_account",
+    "data": {
+      "name": "personal",
+      "new_name":"bills",
+      "amount":500
+    }
+  }
+}
