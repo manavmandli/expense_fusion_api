@@ -1,0 +1,19 @@
+meta {
+  name: get_transactions
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{base_url}}
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "type": "get_transactions",
+    "space_filter": "",
+    "duration_filter": "1 Month"
+  }
+}
