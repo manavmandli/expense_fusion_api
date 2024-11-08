@@ -13,7 +13,9 @@ get {
 body:json {
   {
     "type": "get_transactions",
-    "space_filter": "",
-    "duration_filter": "1 Month"
+    "data": {
+      "space_filter": "nesscale-internal",
+      "duration_filter": "1 Month"
+    }
   }
 }
